@@ -1,0 +1,15 @@
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .main_content{
+    width: 100%;
+    margin-left: 200px;
+} 
+.wrapper .main_content .info{
+    margin: 20px;
+    line-height: 25px;
+}
+.wrapper .main_content .info div{
+    margin-bottom: 20px;
+}

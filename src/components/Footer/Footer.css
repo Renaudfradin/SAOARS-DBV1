@@ -1,0 +1,19 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.footer{
+    color: aliceblue;
+    background-color: rgba(80, 80, 80, 0.5);
+    text-align: center;
+}
+.main_content{
+    margin-left: 200px;
+} 
+.main_content .info div{
+    margin-bottom: 0px;
+}
+.footer p{
+    padding: 5px 0px 5px 0px;
+    margin: 0%;
+}
