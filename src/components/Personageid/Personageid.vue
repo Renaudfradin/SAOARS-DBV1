@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper1">
         <div class="main_content">
             <div class="info">
                 <h1>personage id</h1>

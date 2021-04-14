@@ -2,9 +2,9 @@
     display: flex;
     position: relative;
 }
-.wrapper .main_content{
-    width: 100%;
-    margin-left: 200px;
+.wrapper1 .main_content{
+    width: 70%;
+    margin-left: 350px;
 } 
 .wrapper .main_content .info{
     margin: 20px;
