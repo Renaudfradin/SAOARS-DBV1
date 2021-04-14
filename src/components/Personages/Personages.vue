@@ -4,6 +4,9 @@
             <div class="info">
                 <h1>personages</h1>
                 <button v-on:click.prevent="callapi">test api</button>
+                <ul idss="persoss.name">
+                    <li v-for="persoss in persos" :key="persoss.id"><router-link to="{name:'personage'}" >{{persoss.name}}</router-link> {{persoss.description}} {{persoss.typeattack1}} {{persoss.typeattack2}} {{persoss.typeattack3}}</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -14,8 +17,8 @@ export default {
     name: 'Personages',
     data(){
         return {
-            perso:undefined,
-            persos:undefined,
+            perso: undefined,
+            persos: [],
             urlapi:'https://api-saoars.herokuapp.com/perso'
         }
     },
@@ -24,7 +27,7 @@ export default {
             axios
             .get(`${this.urlapi}/45`)
             .then(reponse => {    
-                this.perso = reponse.data; 
+                this.perso = reponse.data.Personage; 
                 console.log(this.perso);
             })
         }
@@ -33,8 +36,8 @@ export default {
         axios
         .get(`${this.urlapi}`)
         .then(reponse => {
-            //this.persos = reponse.data;
-            console.log(reponse.data.Personage);
+            this.persos = reponse.data.Personage;
+            console.log(this.persos);
         })
     }
 

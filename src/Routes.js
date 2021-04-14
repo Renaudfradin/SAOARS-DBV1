@@ -4,6 +4,7 @@ import Arme from './components/Arme/Arme.vue'
 import Objet from './components/Objet/Objet.vue'
 import Scoot from './components/Scoot/Scoot.vue'
 import Equipement from './components/Equipement/Equipement.vue'
+import Personageid from './components/Personageid/Personageid.vue'
 
 export default [
     {path: '*' , component:Home},
@@ -14,4 +15,5 @@ export default [
     {path: '/Objet' ,component: Objet},
     {path: '/Scoot' ,component: Scoot},
     {path: '/Equipement' ,component: Equipement},
+    {path: '/Personage/:id(\\d+)', name:'personageid' ,component:Personageid , props: () =>({query: "test"}) }
 ]
