@@ -5,7 +5,7 @@
                 <h1>personages</h1>
                 <button v-on:click.prevent="callapi">test api</button>
                 <ul idss="persoss.name">
-                    <li v-for="persoss in persos" :key="persoss.id"><router-link to="{name:'personage'}" >{{persoss.name}}</router-link> {{persoss.description}} {{persoss.typeattack1}} {{persoss.typeattack2}} {{persoss.typeattack3}}</li>
+                    <li v-for="persoss in persos" :key="persoss.id"><router-link :to="{ name: 'personageid' , params: { id:persoss.id }}">{{persoss.name}}</router-link> {{persoss.description}} {{persoss.typeattack1}} {{persoss.typeattack2}} {{persoss.typeattack3}}</li>
                 </ul>
             </div>
         </div>
