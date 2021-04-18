@@ -2,7 +2,6 @@
     <div class="wrapper1">
         <div class="main_content">
             <div class="info">
-                <!-- <h1>personages</h1> -->
                 <div class="search_perso">
                     <input type="text" @keyup="searchperso" v-model="queryperso" placeholder="rechecher un personage" class="search_perso_input">
                 </div>

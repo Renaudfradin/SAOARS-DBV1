@@ -82,3 +82,49 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@media screen and (max-width:426px) {
+    .wrapper1 .main_content{
+        width: 100%;
+        margin-left: 0px;
+    } 
+    .perso_list{
+        margin-top: 20px;
+        flex-grow: 1;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .perso_card{
+        background-color: rgba(64, 63, 63, 0.80);
+        border-radius: 5px;
+        width: 76%;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .search_perso{
+        text-align: left;
+        margin-top: 1em;
+        margin-left: 5px;
+        margin-right: 5px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .search_perso_input{
+        width: 82%;
+    }
+
+    .perso_info_name,
+    .perso_info_description{
+        font-size: 13px;
+    }
+
+
+}

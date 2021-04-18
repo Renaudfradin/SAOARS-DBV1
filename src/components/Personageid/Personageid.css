@@ -16,6 +16,11 @@
 .info{
     border-radius: 10px 0 10px 10px;
     background: linear-gradient(180deg, rgba(6,2,71,0.7) 0%, rgba(92,8,78,0.7) 91%);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
 }
 
 .box_stat{
@@ -110,4 +115,116 @@
 
 .histoire{
     width: 30%;
+}
+
+.box_atk1_mp{
+    border: 2px solid#DDCAFF;
+    box-shadow: 1px 1px 5px 1px#4642EF;
+    color: #fff;
+    margin-top: 5px;
+    padding: 1px 15px;
+    background: rgba(255,255,255,0.2);
+    width: 98%;
+}
+
+
+.box_atk1_description{
+    background: linear-gradient(to right, rgba(137, 58, 153, 0.5) 50%, rgba(213, 208, 146, 0.5) 50%);
+    background-position: left bottom;
+    transition: all 1s ease;
+    background-size: 200%;
+    border: 2px solid#CA51F5;
+    box-shadow: 1px 1px 5px 1px#4642EF;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.box_atk1_img_atk{
+    display: flex;
+}
+
+.box_atk1_img{
+    transition: all 1s ease;
+    background-size: 200%;
+    border: 2px solid#CA51F5;
+    box-shadow: 1px 1px 5px 1px#4642EF;
+    justify-content: center;
+    align-items: center;
+}
+.perso_atk_img{
+    width: 60px;
+}
+
+.perso_atk_img_div{
+    width: 60px;
+    padding: 5px;
+}
+
+.box_atk1_name_description{
+    width: 100%;
+}
+
+.box_atk1_name{
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 2px 20px;
+    border-radius: 0 6px 0 0;
+    width: 30%;
+}
+.box_atk1_name_p{
+    margin: 0%;
+    padding: 0%;
+}
+
+.box_atk1{
+    margin-top: 20px;
+}
+
+.box_title{
+    min-height: 50px;
+    background: linear-gradient(90deg, rgba(63,94,251,0.5) 0%, rgba(148,14,196,0.5) 61%, rgba(138,81,252,0.5) 92%);
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    padding: 1.5% 2% 1% 2%;
+}
+
+.box_personage{
+    display: flex;
+    justify-content: center;
+}
+
+.box_info_title{
+    width: 40%;
+    margin-right: 20px;
+}
+.box_atk{
+    width: 40%;
+}
+
+.box_img{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.box_img_img{
+    width: 85%;
+}
+
+.box_arme_img{
+    width: 80px;
+}
+
+.box_arme{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box_arme_title{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.315);
 }
