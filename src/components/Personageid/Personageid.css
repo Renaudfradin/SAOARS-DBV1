@@ -152,6 +152,8 @@
     box-shadow: 1px 1px 5px 1px#4642EF;
     justify-content: center;
     align-items: center;
+    border-radius: 6px 0px 0px 0px ;
+    margin-right: 5px;
 }
 .perso_atk_img{
     width: 60px;
@@ -169,9 +171,10 @@
 .box_atk1_name{
     border-top: 1px solid rgba(255, 255, 255, 0.8);
     border-right: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
     padding: 2px 20px;
     border-radius: 0 6px 0 0;
-    width: 30%;
+    width: 80%;
 }
 .box_atk1_name_p{
     margin: 0%;
