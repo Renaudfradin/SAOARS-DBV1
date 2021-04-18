@@ -13,3 +13,72 @@
 .wrapper .main_content .info div{
     margin-bottom: 20px;
 }
+
+.perso_avatar{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.perso_list{
+    margin-top:20px;
+    flex-grow: 1;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+    column-count: 4;
+}
+.perso_card{
+    background-color: rgba(64, 63, 63, 0.80);
+    border-radius: 5px;
+    width: 22%;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.perso_img{
+    width: 100%;
+    border-radius: 10px;
+    max-width: 150px;
+}
+
+.perso_atk{
+    width: 40px;
+    max-width: 45px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.perso_atk_img{
+    width: 40px;
+}
+
+.perso_info{
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.perso_info_name{
+    font-size: 16px;
+}
+
+.search_perso{
+    text-align: center;
+    margin-top: 1em;
+}
+.search_perso_input{
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+    height: 30px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

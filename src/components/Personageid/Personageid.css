@@ -13,3 +13,101 @@
 .wrapper .main_content .info div{
     margin-bottom: 20px;
 }
+.info{
+    border-radius: 10px 0 10px 10px;
+    background: linear-gradient(180deg, rgba(6,2,71,0.7) 0%, rgba(92,8,78,0.7) 91%);
+}
+
+.box_stat{
+    display: flex;
+    justify-content: center;
+}
+.histoire_perso{
+    padding: 7% 5%;
+    display: inline-block;
+    border: 3px solid #333333;
+    border-radius: 2% 5% 5% 2%;
+    background: rgba(255,255,255,0.2);
+    position: relative;
+    color: #fff;
+    background-image: url(../../assets/back_header.png);
+    background-repeat: no-repeat;
+}
+
+.box_stat_title{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #dcdcdc;
+}
+
+.box_stat_value{
+    font-size: 130%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 5px;
+    color: #fff;
+}
+.box_stat_ligne{
+    display: flex;
+}
+.box_stat_hp{
+    height: 3px;
+    width: 50%;
+    background: linear-gradient(90deg, rgb(55, 250, 55) 23%, transparent 23%),linear-gradient( 90deg, rgb(55, 210, 55) 48%, transparent 48%),linear-gradient( 90deg, rgb(55, 170, 55) 73%, transparent 73%),linear-gradient( 90deg, rgb(55, 130, 55) 95%, transparent 95%),linear-gradient( 90deg, rgb(233, 72, 247) 98%, #fff 100%);
+}
+
+.box_stat_mp{
+    height: 3px;
+    width: 50%;
+    background: linear-gradient( 90deg, rgb(35, 250, 235) 23%, transparent 23%),linear-gradient( 90deg, rgb(35, 210, 235) 48%, transparent 48%),linear-gradient( 90deg, rgb(35, 170, 235) 73%, transparent 73%),linear-gradient( 90deg, rgb(35, 130, 235) 95%, transparent 95%),linear-gradient( 90deg, rgb(233, 72, 247) 98%, #fff 100%);
+}
+
+.box_stat_atk{
+    height: 3px;
+    width: 50%;
+    background: linear-gradient( 90deg, rgb(235, 70, 35) 23%, transparent 23%),linear-gradient( 90deg, rgb(195, 60, 35) 48%, transparent 48%),linear-gradient( 90deg, rgb(155, 50, 35) 73%, transparent 73%),linear-gradient( 90deg, rgb(115, 40, 35) 95%, transparent 95%),linear-gradient( 90deg, rgb(233, 72, 247) 98%, #fff 100%);
+}
+
+.box_stat_matk{
+    height: 3px;
+    width: 50%;
+    background: linear-gradient( 90deg, rgb(240, 200, 25) 23%, transparent 23%),linear-gradient( 90deg, rgb(210, 185, 25) 48%, transparent 48%),linear-gradient( 90deg, rgb(180, 170, 25) 73%, transparent 73%),linear-gradient( 90deg, rgb(150, 155, 25) 95%, transparent 95%),linear-gradient( 90deg, rgb(233, 72, 247) 98%, #fff 100%);
+}   
+
+.box_stat_def{
+    height: 3px;
+    width: 50%;
+    background: linear-gradient( 90deg, rgb(180, 10, 240) 23%, transparent 23%),linear-gradient( 90deg, rgb(160, 10, 200) 48%, transparent 48%),linear-gradient( 90deg, rgb(140, 10, 160) 73%, transparent 73%),linear-gradient( 90deg, rgb(120, 10, 120) 95%, transparent 95%),linear-gradient( 90deg, rgb(233, 72, 247) 98%, #fff 100%);
+}
+
+.box_stat_mdef{
+    height: 3px;
+    width: 50%;
+    background: linear-gradient( 90deg, rgb(200, 10, 145) 23%, transparent 23%),linear-gradient( 90deg, rgb(180, 10, 105) 48%, transparent 48%),linear-gradient( 90deg, rgb(160, 10, 65) 73%, transparent 73%),linear-gradient( 90deg, rgb(140, 10, 25) 95%, transparent 95%),linear-gradient( 90deg, rgb(233, 72, 247) 98%, #fff 100%);
+}
+
+.box_stat_crit{
+    height: 3px;
+    width: 50%;
+    background: linear-gradient( 90deg, rgb(235, 150, 15) 23%, transparent 23%),linear-gradient( 90deg, rgb(195, 120, 15) 48%, transparent 48%),linear-gradient( 90deg, rgb(155, 90, 15) 73%, transparent 73%),linear-gradient( 90deg, rgb(115, 60, 15) 95%, transparent 95%),linear-gradient( 90deg, rgb(233, 72, 247) 98%, #fff 100%);
+}
+
+.box_stat_spd{
+    height: 3px;
+    width: 50%;
+    background: linear-gradient( 90deg, rgb(240, 200, 25) 23%, transparent 23%),linear-gradient( 90deg, rgb(210, 185, 25) 48%, transparent 48%),linear-gradient( 90deg, rgb(180, 170, 25) 73%, transparent 73%),linear-gradient( 90deg, rgb(150, 155, 25) 95%, transparent 95%),linear-gradient( 90deg, rgb(233, 72, 247) 98%, #fff 100%);
+}
+
+.table_box_stat{
+    width: 30%;
+    padding:20px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0,0,0,0.3);
+    margin-right: 20px;
+}
+
+.histoire{
+    width: 30%;
+}

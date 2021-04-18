@@ -2,21 +2,174 @@
     <div class="wrapper1">
         <div class="main_content">
             <div class="info">
-                <h1>personages</h1>
-                <div>
-                    <input type="text" @keyup="searchperso" v-model="queryperso" placeholder="rechecher un perso">
+                <!-- <h1>personages</h1> -->
+                <div class="search_perso">
+                    <input type="text" @keyup="searchperso" v-model="queryperso" placeholder="rechecher un personage" class="search_perso_input">
                 </div>
-                <!-- <button v-on:click.prevent="callapi">test api</button> -->
                 <div v-if="perso.length == 0">
-                    <ul idss="persoss.name" v-for="persoss in persos" :key="persoss.id">
-                        <li><router-link :to="{ name: 'personageid' , params: { id:persoss.id }}">{{persoss.name}}</router-link> {{persoss.description}} {{persoss.typeattack1}} {{persoss.typeattack2}} {{persoss.typeattack3}}</li>
-                    </ul>
+                    <div class="perso_list">
+                        <div v-for="persoss in persos" :key="persoss.id" class="perso_card">
+                            <div class="perso_avatar">
+                                <div class="perso_link">
+                                    <router-link :to="{ name: 'personageid' , params: { id:persoss.id }}"><img src="../../assets/character_149.png" alt="" class="perso_img"></router-link>
+                                </div>
+                                <div class="perso_atk">
+                                    <div v-if="persoss.typeattack1 == 'B'">
+                                        <img class="perso_atk_img" src="../../assets/skills_b.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack1 == 'E'">
+                                        <img class="perso_atk_img" src="../../assets/skills_e.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack1 == 'H'">
+                                        <img class="perso_atk_img" src="../../assets/skills_h.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack1 == 'EM'">
+                                        <img class="perso_atk_img" src="../../assets/skills_em.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack1 == 'A'">
+                                        <img class="perso_atk_img" src="../../assets/skills_a.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack1 == 'C'">
+                                        <img class="perso_atk_img" src="../../assets/skills_fc.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else>
+                                        <p></p>
+                                    </div>
+
+                                    <div v-if="persoss.typeattack2 == 'B'">
+                                        <img class="perso_atk_img" src="../../assets/skills_b.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack2 == 'E'">
+                                        <img class="perso_atk_img" src="../../assets/skills_e.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack2 == 'H'">
+                                        <img class="perso_atk_img" src="../../assets/skills_h.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack2 == 'EM'">
+                                        <img class="perso_atk_img" src="../../assets/skills_em.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack2 == 'A'">
+                                        <img class="perso_atk_img" src="../../assets/skills_a.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack2 == 'C'">
+                                        <img class="perso_atk_img" src="../../assets/skills_fc.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else>
+                                        <p></p>
+                                    </div>
+
+                                    <div v-if="persoss.typeattack3 == 'B'">
+                                        <img class="perso_atk_img" src="../../assets/skills_b.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack3 == 'E'">
+                                        <img class="perso_atk_img" src="../../assets/skills_e.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack3 == 'H'">
+                                        <img class="perso_atk_img" src="../../assets/skills_h.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack3 == 'EM'">
+                                        <img class="perso_atk_img" src="../../assets/skills_em.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack3 == 'A'">
+                                        <img class="perso_atk_img" src="../../assets/skills_a.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persoss.typeattack3 == 'C'">
+                                        <img class="perso_atk_img" src="../../assets/skills_fc.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="perso_info">
+                                <p class="perso_info_name">{{persoss.name}}</p>
+                                <p class="perso_info_description">{{persoss.description}}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
                 <div v-else>
-                    <ul idss="persoss.name" v-for="persoss in perso" :key="persoss.id">
-                        <li><router-link :to="{ name: 'personageid' , params: { id:persoss.id }}">{{persoss.name}}</router-link> {{persoss.description}} {{persoss.typeattack1}} {{persoss.typeattack2}} {{persoss.typeattack3}}</li>
-                    </ul>
-                </div>
+                    <div class="perso_list">
+                        <div v-for="persosss in perso" :key="persosss.id" class="perso_card">
+                            <div class="perso_avatar">
+                                <div class="perso_link">
+                                    <router-link :to="{ name: 'personageid' , params: { id:persosss.id }}"><img src="../../assets/character_149.png" alt="" class="perso_img"></router-link>
+                                </div>
+                                <div class="perso_atk">
+                                    <div v-if="persosss.typeattack1 == 'B'">
+                                        <img class="perso_atk_img" src="../../assets/skills_b.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack1 == 'E'">
+                                        <img class="perso_atk_img" src="../../assets/skills_e.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack1 == 'H'">
+                                        <img class="perso_atk_img" src="../../assets/skills_h.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack1 == 'EM'">
+                                        <img class="perso_atk_img" src="../../assets/skills_em.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack1 == 'A'">
+                                        <img class="perso_atk_img" src="../../assets/skills_a.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack1 == 'C'">
+                                        <img class="perso_atk_img" src="../../assets/skills_fc.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else>
+                                        <p></p>
+                                    </div>
+
+                                    <div v-if="persosss.typeattack2 == 'B'">
+                                        <img class="perso_atk_img" src="../../assets/skills_b.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack2 == 'E'">
+                                        <img class="perso_atk_img" src="../../assets/skills_e.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack2 == 'H'">
+                                        <img class="perso_atk_img" src="../../assets/skills_h.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack2 == 'EM'">
+                                        <img class="perso_atk_img" src="../../assets/skills_em.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack2 == 'A'">
+                                        <img class="perso_atk_img" src="../../assets/skills_a.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack2 == 'C'">
+                                        <img class="perso_atk_img" src="../../assets/skills_fc.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else>
+                                        <p></p>
+                                    </div>
+
+                                    <div v-if="persosss.typeattack3 == 'B'">
+                                        <img class="perso_atk_img" src="../../assets/skills_b.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack3 == 'E'">
+                                        <img class="perso_atk_img" src="../../assets/skills_e.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack3 == 'H'">
+                                        <img class="perso_atk_img" src="../../assets/skills_h.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack3 == 'EM'">
+                                        <img class="perso_atk_img" src="../../assets/skills_em.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack3 == 'A'">
+                                        <img class="perso_atk_img" src="../../assets/skills_a.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else-if="persosss.typeattack3 == 'C'">
+                                        <img class="perso_atk_img" src="../../assets/skills_fc.png" alt="" srcset="">
+                                    </div>
+                                    <div v-else>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="perso_info">
+                                <p class="perso_info_name">{{persosss.name}}</p>
+                                <p class="perso_info_description">{{persosss.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
     </div>
@@ -30,19 +183,10 @@ export default {
             perso: [],
             persos: [],
             urlapi:'https://api-saoars.herokuapp.com/perso',
-            queryperso:'',
-
+            queryperso: '',
         }
     },
     methods:{
-       /* callapi:function() {
-            axios
-            .get(`${this.urlapi}/45`)
-            .then(reponse => {    
-                this.perso = reponse.data.Personage; 
-                console.log(this.perso);
-            })
-        }*/
         searchperso(){
             axios
             .get(`${this.urlapi}/p/${this.queryperso}`)
