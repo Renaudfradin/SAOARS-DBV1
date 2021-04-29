@@ -107,6 +107,9 @@ body{
     height: 40px;
     border-radius: 5px;
 }
+.navhori_title a{
+    text-decoration: none;
+}
 @media screen and (max-width:426px) {
     .navhori_title{
         width: auto;
