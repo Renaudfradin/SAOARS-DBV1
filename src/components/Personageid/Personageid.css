@@ -284,7 +284,7 @@
     }
 }
 
-@media screen and (max-width:768px) and (min-width:426px){
+@media screen and (max-width:900px) and (min-width:426px){
     .wrapper1 .main_content{
         width: 100%;
         margin-left:0px;
@@ -316,6 +316,113 @@
 
     .box_stat{
         display: block;
+        justify-content: center;
+    }
+
+    .table_box_stat{
+        width: 90%;
+        padding: 20px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(0,0,0,0.3);
+        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .histoire {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:900px){
+    .wrapper1 .main_content{
+        width: 80%;
+        margin-left:200px;
+    }
+
+    .box_personage{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box_info_title{
+        width: 100%;
+        margin-right: 0px; 
+    }
+
+    .box_atk{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box_atk1_description{
+        width: 90%;
+    }
+    
+    .box_atk1_mp{
+        width: 90%;
+    }
+
+    .box_stat{
+        display: flex;
+        justify-content: center;
+    }
+
+    .table_box_stat{
+        width: 90%;
+        padding: 20px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(0,0,0,0.3);
+        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .histoire {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media screen and (max-width:1440px) and (min-width:1024px){
+    .wrapper1 .main_content{
+        width: 80%;
+        margin-left:210px;
+    }
+
+    .box_personage{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box_info_title{
+        width: 100%;
+        margin-right: 0px; 
+    }
+
+    .box_atk{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box_atk1_description{
+        width: 90%;
+    }
+    
+    .box_atk1_mp{
+        width: 90%;
+    }
+
+    .box_stat{
+        display: flex;
         justify-content: center;
     }
 

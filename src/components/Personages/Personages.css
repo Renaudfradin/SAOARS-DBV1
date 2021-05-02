@@ -186,3 +186,179 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    .search_perso_input{
+        width: 97%;
+    }
+
+    .search_perso{
+        margin-top: 1em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .search_perso_input{
+        width: 97%;
+    }
+
+    .wrapper1 .main_content{
+        width: 100%;
+        margin-left:0px;
+    }
+
+    .perso_list{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto;
+        width: 96%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .perso_card{
+        background-color: rgba(64, 63, 63, 0.80);
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    .perso_info_name,
+    .perso_info_description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1440px) and (min-width:1024px) {
+    .search_perso_input{
+        width: 97%;
+    }
+
+    .search_perso{
+        margin-top: 1em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .search_perso_input{
+        width: 97%;
+    }
+
+    .wrapper1 .main_content{
+        width: 80%;
+        margin-left:250px;
+    }
+
+    .perso_list{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto;
+        width: 96%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .perso_card{
+        background-color: rgba(64, 63, 63, 0.80);
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    .perso_info_name,
+    .perso_info_description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1730px) and (min-width:1440px) {
+    .search_perso_input{
+        width: 97%;
+    }
+
+    .search_perso{
+        margin-top: 1em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .search_perso_input{
+        width: 97%;
+    }
+
+    .wrapper1 .main_content{
+        width: 80%;
+        margin-left:250px;
+    }
+
+    .perso_list{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto;
+        width: 96%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .perso_card{
+        background-color: rgba(64, 63, 63, 0.80);
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    .perso_info_name,
+    .perso_info_description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .search_perso_input{
+        width: 97%;
+    }
+
+    .search_perso{
+        margin-top: 1em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .search_perso_input{
+        width: 97%;
+    }
+
+    .wrapper1 .main_content{
+        width: 80%;
+        margin-left:250px;
+    }
+
+    .perso_list{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto;
+        width: 96%;
+        display: grid;
+        grid-template-columns: repeat(5, 22%);
+        grid-template-rows: repeat(5 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .perso_card{
+        background-color: rgba(64, 63, 63, 0.80);
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    .perso_info_name,
+    .perso_info_description {
+        font-size: 14px;
+    }
+}
