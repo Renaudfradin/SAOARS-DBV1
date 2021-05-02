@@ -5,6 +5,7 @@
 .wrapper1 .main_content{
     width: 70%;
     margin-left: 350px;
+    margin-top: 70px;
 } 
 .wrapper .main_content .info{
     margin: 20px;
@@ -78,4 +79,51 @@
     padding-top: 5px;
     padding-bottom: 5px;
     height: 315px;
+}
+
+.new_porso_box_img_1{
+    height: 315px;
+}
+
+@media screen and (max-width:426px) {
+    .wrapper1 .main_content{
+        width: 95%;
+        margin-left: 0px;
+    }
+
+    .new_porso_box_img_1{
+        height: auto;
+        width: 95%;
+    }
+
+    .new_porso_box{
+        width: 100%;
+        height: auto;
+        background-color: rgba(255,255,255,0.3);
+        padding: 5px;
+    }
+
+    .new_porso_box_img{
+        text-align: center;
+        background-color: rgba(255,255,255,0.3);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 50%;
+    }
+
+    .new_porso_box{
+        width: 100%;
+        height: auto;
+        background-color: rgba(255,255,255,0.3);
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width:769px) and (min-width:427px) {
+        .wrapper1 .main_content[data-v-15737ea2] {
+            width: 70%;
+            margin-left: 200px;
+            margin-top: 70px;
+        }
+    }
 }

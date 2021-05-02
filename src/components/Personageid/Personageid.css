@@ -1,6 +1,5 @@
 .wrapper{
     display: flex;
-    position: relative;
 }
 .wrapper1 .main_content{
     width: 70%;
@@ -16,7 +15,7 @@
 .info{
     border-radius: 10px 0 10px 10px;
     background: linear-gradient(180deg, rgba(6,2,71,0.7) 0%, rgba(92,8,78,0.7) 91%);
-    margin-top: 5%;
+    margin-top: 70px;
     margin-bottom: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -55,7 +54,7 @@
     color: #fff;
 }
 .box_stat_ligne{
-    display: flex;
+    display: block;
 }
 .box_stat_hp{
     height: 3px;
@@ -230,4 +229,110 @@
     width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.315);
+}
+
+@media screen and (max-width:426px){
+    .wrapper1 .main_content{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .box_personage{
+        display: block;
+        justify-content: center;
+    }
+
+    .box_info_title{
+        width: 100%;
+        margin-right: 0px; 
+    }
+
+    .box_atk{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box_atk1_description{
+        width: 90%;
+    }
+    
+    .box_atk1_mp{
+        width: 90%;
+    }
+
+    .box_stat{
+        display: block;
+        justify-content: center;
+    }
+
+    .table_box_stat{
+        width: 90%;
+        padding: 20px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(0,0,0,0.3);
+        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .histoire {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:426px){
+    .wrapper1 .main_content{
+        width: 100%;
+        margin-left:0px;
+    }
+
+    .box_personage{
+        display: block;
+        justify-content: center;
+    }
+
+    .box_info_title{
+        width: 100%;
+        margin-right: 0px; 
+    }
+
+    .box_atk{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box_atk1_description{
+        width: 90%;
+    }
+    
+    .box_atk1_mp{
+        width: 90%;
+    }
+
+    .box_stat{
+        display: block;
+        justify-content: center;
+    }
+
+    .table_box_stat{
+        width: 90%;
+        padding: 20px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(0,0,0,0.3);
+        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .histoire {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

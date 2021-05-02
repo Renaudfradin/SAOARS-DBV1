@@ -191,7 +191,7 @@ export default {
             .get(`${this.urlapi}/p/${this.queryperso}`)
             .then(reponse => {
                 this.perso = reponse.data.Personage;
-                console.log(this.perso);
+                //console.log(this.perso);
             })
             .catch(this.persos)
         }
@@ -201,7 +201,7 @@ export default {
         .get(`${this.urlapi}`)
         .then(reponse => {
             this.persos = reponse.data.Personage;
-            console.log(this.persos);
+            //console.log(this.persos);
         })
     }
 

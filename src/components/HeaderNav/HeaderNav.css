@@ -110,12 +110,25 @@ body{
 .navhori_title a{
     text-decoration: none;
 }
+
 @media screen and (max-width:426px) {
     .navhori_title{
         width: auto;
         text-align: center;
         border: 2px black solid;
         margin-left: 5%;
+        height: 46px;
+        background-color: black;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    .navhori_title{
+        width: auto;
+        text-align: center;
+        border: 2px black solid;
+        margin-left: 0%;
         height: 46px;
         background-color: black;
         text-decoration: none;
